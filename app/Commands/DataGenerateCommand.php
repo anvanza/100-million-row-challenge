@@ -37,7 +37,7 @@ final class DataGenerateCommand
         while ($i < $iterations) {
             $visit = $visits[array_rand($visits)];
 
-            fwrite($handle, $visit->uri . ';' . $visit->generateDate() . PHP_EOL);
+            fwrite($handle, $visit->uri . ',' . $visit->generateDate() . PHP_EOL);
 
             $i++;
 

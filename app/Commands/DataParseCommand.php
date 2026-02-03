@@ -25,7 +25,7 @@ final class DataParseCommand
 
         $branchName = exec('git branch --show-current');
 
-        $leaderBoardEntry = time() . ';' . $branchName . ';' . $executionTime;
+        $leaderBoardEntry = time() . ',' . $branchName . ',' . $executionTime;
 
         if ($store) {
             $leaderBoardFile = fopen(__DIR__ . '/../../leaderboard.csv', 'a');

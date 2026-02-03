@@ -5,7 +5,7 @@ Welcome to the one-billion-row challenge in PHP! Your goal is to parse a data se
 To submit a solution, you'll have to [fork this repository](https://github.com/brendt/php-one-billion-row-challenge/fork), and clone it locally. Once done, install the project dependencies and generate a dataset for local development:
 
 ```sh
-composer install
+composer install,
 php tempest data:generate
 ```
 
@@ -44,10 +44,10 @@ You'll be parsing millions of CSV lines into a JSON file. You'll need to take se
 As an example, take the following input:
 
 ```csv
-https://stitcher.io/blog/11-million-rows-in-seconds;2026-01-24T01:16:58+00:00
-https://stitcher.io/blog/php-enums;2024-01-24T01:16:58+00:00
-https://stitcher.io/blog/11-million-rows-in-seconds;2026-01-24T01:12:11+00:00
-https://stitcher.io/blog/11-million-rows-in-seconds;2025-01-24T01:15:20+00:00
+https://stitcher.io/blog/11-million-rows-in-seconds,2026-01-24T01:16:58+00:00
+https://stitcher.io/blog/php-enums,2024-01-24T01:16:58+00:00
+https://stitcher.io/blog/11-million-rows-in-seconds,2026-01-24T01:12:11+00:00
+https://stitcher.io/blog/11-million-rows-in-seconds,2025-01-24T01:15:20+00:00
 ```
 
 Your parser should store the following output in `$outputPath` as a JSON file:
